@@ -10,8 +10,10 @@ if test -f "users.txt"; then
     echo "starting script"
 else
     echo "use users.txt idiot"
-    echo >> users.txt
     echo "You Shouldn't be in the competition. L Bozo"
+    touch users.txt
+    chmod 777 users.txt
+    nano users.txt
     exit
 fi
 if test -f "admin.txt"; then
@@ -20,7 +22,9 @@ if test -f "admin.txt"; then
 else
     echo "use admin.txt idiot"
     echo "You Shouldn't be in the competition. L Bozo"
-    echo >> admin.txt
+    touch admin.txt
+    chmod 777 admin.txt
+    nano admin.txt
     exit
 fi 
 
